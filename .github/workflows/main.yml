@@ -5,7 +5,7 @@ on:
   schedule:
     # 定时任务：使用 cron 表达式。注意：GitHub Actions 使用的是 UTC 时间，北京时间是 UTC+8
     # 下面的 '0 23 * * *' 代表 UTC 时间每天 23:00，即北京时间第二天早上 7:00
-    - cron: '0 23 * * *'
+    - cron: '15 23 * * *'
   workflow_dispatch:  # 允许手动触发，方便测试
 
 jobs:
