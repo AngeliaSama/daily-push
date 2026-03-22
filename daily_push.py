@@ -95,7 +95,8 @@ def main():
     color_lines = color_raw.split('\n')
     formatted_color = "\n".join([f"- {line}" for line in color_lines])
 
-    today = datetime.now().strftime("%Y年%m月%d日 %A")
+    beijing_tz = timezone(timedelta(hours=8))
+    today = datetime.now(beijing_tz).strftime("%Y年%m月%d日 %A")
     title = f"🌞 {today} 早安提醒"
     content = f"""
 ### 🌤️ 今日天气
